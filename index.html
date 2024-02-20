@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        #currentAddress {
+            font-weight: bold;
+        }
+        input[type="input"],
+        input[type="text"],
+        select {
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 200px;
+        }
+        button {
+            padding: 8px 16px;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div id="currentAddress"></div><br>
+    <input type="input" id="fundAmount" placeholder="Enter Fund Amount">
+    <button type="button" id="addFund">Add Loan Fund</button><br>
+    <input type="input" id="withdrawFundAmount" placeholder="Enter Fund Amount">
+    <button type="button" id="withdrawFund">Withdraw Loan Fund</button><br>
+    <button type="button" id="displayFund">Display Loan Fund</button><br><br>
+    <button type="button" id="createAccount">Create Account</button><br><br>
+    <input type="input" id="depositAmount" placeholder="Enter Deposit Amount">
+    <button type="button" id="deposit">Deposit ETH</button><br>
+    <input type="input" id="withdrawAmount" placeholder="Enter Withdraw Amount">
+    <button type="button" id="withdraw">Withdraw ETH</button><br><br>
+    <button type="button" id="balance">Account Balance</button><br><br>
+    <input type="text" id="getLoanAmount" placeholder="Enter Amount">
+    <input type="text" id="getLoanPeriod" placeholder="Enter Months">
+    <select name="loan" id="getLoanType">
+        <option value="car" selected>Car Loan</option>
+        <option value="home">Home Loan</option>
+        <option value="education">Education Loan</option>
+    </select>
+    <button id="getLoan">Get Loan</button><br>
+    <select id="payLoanType">
+        <option value="car" selected>Car Loan</option>
+        <option value="home">Home Loan</option>
+        <option value="education">Education Loan</option>
+    </select>
+    <button id="payLoan">Pay Emi</button><br><br>
+
+    <input type="text" id="transferTo" placeholder="Transfer To">
+    <input type="text" id="transferAmount" placeholder="Enter Amount">
+    <button type="button" id="transfer">Transfer</button><br><br>
+
+    <button type="button" id="displayDetails">Display Current User Details</button>
+
+
+    <script src="index.js" type="module"></script>
+</body>
+</html>
