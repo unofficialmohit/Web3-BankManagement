@@ -527,7 +527,7 @@ payLoan.addEventListener("click", async () => {
 		window.alert("YOU CANT PERFORM THIS TRANSACTION");
 	})
 	if(flag==1)
-    await contract.methods.payHomeEmi().send({ from: account });
+    await contract.methods.payEducationEmi().send({ from: account });
   }
 });
 
